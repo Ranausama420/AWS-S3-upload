@@ -3,6 +3,16 @@ import boto3
 import mimetypes
 import botocore
 import pandas as pd
+"""" These lines of code are setting up a connection to Amazon Web Services (AWS)
+Simple Storage Service (S3) using the Boto3 Python library.
+The first line creates a resource object for S3, which allows you 
+to interact with S3 in a high-level, Pythonic way. It requires 
+authentication credentials, which are provided through the 
+aws_access_key_id and aws_secret_access_key parameters.
+The second line creates a client object for S3, which allows 
+you to interact with S3 in a low-level, API-like way.
+It only requires the service_name parameter, which specifies that
+it is for interacting with S3."""
 s3 = boto3.resource(
         's3',
         aws_access_key_id="*****************",
